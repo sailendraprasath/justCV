@@ -8,4 +8,3 @@ labels = data[:,4]
 print(labels)
 features = data[:,0:4]
 print(features)
-print(labels,features,data)
