@@ -32,6 +32,7 @@ from keras.layers import Dense
 
 print(Sequential)
 print(Dense)
+print(Sequential)
 
 
 
