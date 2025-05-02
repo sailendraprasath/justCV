@@ -27,7 +27,7 @@ transformed_dog = image_gen.random_transform(dog)
 
 image_gen.flow_from_directory('CATS_DOGS/train')
 
-Show the transformed image
+# Show the transformed image
 plt.imshow(transformed_dog)
 plt.axis('off')
 plt.title("Augmented Image")
