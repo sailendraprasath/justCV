@@ -1,8 +1,8 @@
 import cv2
 import mediapipe as mp
 import pyautogui
-import math
-import time
+import math as m
+import time as t
 
 # Initialize MediaPipe Hands and Drawing utils
 mp_hands = mp.solutions.hands
