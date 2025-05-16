@@ -7,6 +7,6 @@ while True:
     cv2.imshow('Frame',frame)
     if cv2.waitKey(1) & 0xff == ord('q'):
         break
-# print(frame.shape)
 cap.release()
 cv2.destroyAllWindows()
+# print(frame.shape)
