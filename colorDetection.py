@@ -1,6 +1,6 @@
 
 import cv2
-from util import get_limits
+from util2 import get_limits
 from PIL import Image
 
 cap = cv2.VideoCapture(0)
