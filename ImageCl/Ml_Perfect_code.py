@@ -9,6 +9,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.svm import SVC
 # 
 from sklearn.metrics import accuracy_score
+import pickle
 #                            PREPARE DATA
 
 input_dir = r'E:\justCV\ImageCl'
@@ -46,3 +47,5 @@ y_prediction = best_estimator.predict(x_test)
 score = accuracy_score(y_prediction,y_test)
 
 print('{}% of samples were classified correctly'.format(score*100))
+
+pickle.dump(best_estimator,open('./model.p','wb'))
