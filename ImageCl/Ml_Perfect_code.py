@@ -18,9 +18,9 @@ category = ['empty','not_empty']
 data = []
 labels = []
 
-for category_idx,category in enumerate(category):
-    for file in os.listdir(os.path.join(input_dir,category)):
-        img_path = os.path.join(input_dir,category,file)
+for category_idx,categorys in enumerate(category):
+    for file in os.listdir(os.path.join(input_dir,categorys)):
+        img_path = os.path.join(input_dir,categorys,file)
         img = imread(img_path)
         img = resize(img, (15,15))
         data.append(img.flatten())
