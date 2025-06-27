@@ -9,5 +9,16 @@ class Student:
         print(self.age)
         print(self.grade)
 
-stud = Student("Sailesh",20,7.2)
-stud.display()
+student_record = []
+num = int(input("Enter the number of students: "))
+
+for val in range(num):
+    name = input("Enter the name of student: ")
+    age = int(input("Enter the age of student: "))
+    grade = float(input("Enter the grade of student: "))
+    student = Student(name, age, grade)
+    student_record.append(student)
+
+for student in student_record:
+    student.display()
+    print("----------")
